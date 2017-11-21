@@ -1,0 +1,17 @@
+{
+  "name": "electronapp",
+  "version": "0.1.0",
+  "description": "It is electron sample app from scratch",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && electron ./dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mehmet Gani Tombalak",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.53",
+    "electron": "^1.7.9",
+    "ts-node": "^3.3.0"
+  }
+}

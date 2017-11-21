@@ -1,0 +1,23 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es6",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "allowJs": false,
+        "pretty": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "alwaysStrict": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts?",
+        "**/*.spec.tsx?",
+        "dist"
+    ]
+}

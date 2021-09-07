@@ -7,14 +7,11 @@ import { stringify } from 'querystring';
 class Applicaton {
     static start(): void { new Applicaton() };
 
-    
     private readonly instance: Electron.App = app;
     private mainWindow: Promise<BrowserWindow>;
     constructor() {
         this.instance.on(AppEvent.WindowAllClosed, this.onAllWindowsClosed);
         this.instance.on(AppEvent.Ready, this.onReady);
-
-        
     }
 
     private onReady(): void {
@@ -28,7 +25,6 @@ class Applicaton {
                 } catch (error) {
                     reject(error);
                 }
-
             });
             this.mainWindow.then(mw => {
                 mw.loadURL(url.format(<url.UrlObject>{
@@ -127,8 +123,8 @@ class Applicaton {
             ]
           };
           
-          const menu = Menu.buildFromTemplate(template)
-          Menu.setApplicationMenu(menu)
+          // const menu = Menu.buildFromTemplate(template)
+          // Menu.setApplicationMenu(menu)
     }
 }
 Applicaton.start();
